@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* 
+            break用于结束循环
+
+         */
+
+
+        /* 
+            可以为循环语句创建个label，来识别当前的循环
+            label：循环语句
+                使用break语句时，可以在break后跟着一个label
+                这样break将会结束执行循环，而不是最近的
+
+         */
+       /*  out:
+        for( var i = 0; i<5; i++){
+            console.log("@外层循环:"+i)
+            for( var a = 0;a<5;a++){
+                break out;
+                console.log("内层循环"+a)
+            }
+        } */
+
+
+        /* 
+            continue关键字可以用来跳过当次循环
+                    会终止离他最近的那个循环语句
+         */
+        /*  for( var i = 0; i<5 ;i++){
+             if (i==2) {
+                 continue;
+             }
+            console.log(i)
+         }
+ */
+            out:
+            for( var i = 0; i<5; i++){
+                console.log("@外层循环:"+i)
+                for( var a = 0;a<5;a++){
+                    continue out;
+                    console.log("内层循环"+a)
+            }
+        }
+         
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+         引入外部js，可以在不同页面中引用，也可以利用浏览器缓存机制
+            推荐使用
+
+        script标签一旦引用外部，就不能编写代码了，即使编写了，浏览器也会忽略，
+        如果需要则可以再创建一个script
+    -->
+    <script src="./02外部js文件.js"></script>
+    <script>
+        alert("我是内部的")
+    </script>
+
+</head>
+<body>
+    
+    <button onclick="alert('点我干嘛啊')">点我啊</button>
+    <a href="javascript:alert('点我干鸡巴毛')">傻嗨</a>
+</body>
+</html>

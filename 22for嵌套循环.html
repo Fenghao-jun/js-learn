@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* 
+            通过程序，在页面中输出如下的图形：
+            * 
+            **
+            ***
+            ****
+            *****
+            ******
+
+            ******
+            ******
+            ******
+            ******
+            ******
+            ******
+         */
+
+         //向body输出内容
+         
+         //通过循环来输出图型
+         for( var i = 0 ; i<5 ; i++){
+
+             /* 
+                循环内部再创建一个循环，用来控制图形宽度
+                目前我们的外部循环第一次，内部就会执行五次
+                内层循环控制图形宽度，执行几次图形宽度就是多少
+              */
+                for( var c = 0; c<5; c++){
+                    document.write("*&nbsp&nbsp")
+                }
+            document.write("<br>")
+         }
+
+
+           for( var d = 0 ; d<5 ; d++){
+
+             /* 
+                循环内部再创建一个循环，用来控制图形宽度
+                目前我们的外部循环第一次，内部就会执行五次
+                内层循环控制图形宽度，执行几次图形宽度就是多少
+              */
+                for( var b = 0; b<d+1; b++){
+                    document.write("*&nbsp&nbsp")
+                }
+            document.write("<br>")
+         }
+
+            for( var q = 0 ; q<5 ; q++){
+
+             /* 
+                循环内部再创建一个循环，用来控制图形宽度
+                目前我们的外部循环第一次，内部就会执行五次
+                内层循环控制图形宽度，执行几次图形宽度就是多少
+              */
+                for( var w = 0; w<5-q; w++){
+                    document.write("*&nbsp&nbsp")
+                }
+            document.write("<br>")
+         }
+
+    </script>
+
+</head>
+
+<body>
+    
+</body>
+</html>

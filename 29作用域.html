@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* 
+            作用域
+                - 一个变量的作用范围
+                - 在js中医工有两种作用域
+                    1.全局作用域
+                        直接编写在script标签里面的js代码，再叫全局作用域
+                        在页面打开时创建，页面关闭时销毁
+                            在全局作用域中有一个全局对象window(他代表的是一个浏览窗口，他由浏览器创建直接使用)，
+                                我们可以直接使用
+                        全局作用域的变量都是全局变量，在页面的任意部分都可以访问的到
+                    2.函数作用域 
+
+                    
+         */
+
+        function fun(){
+            var a = 123;
+        }
+
+        fun()
+
+        //console.log(a);
+
+
+        var a = 10;
+        console.log(a);//和 consol.log(window.a)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

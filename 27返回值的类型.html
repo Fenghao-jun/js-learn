@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* 
+            continue退出本次循环
+            break退出当前循环
+            return直接结束函数
+         */
+
+
+         function fun() {
+             alert("函数执行了")
+             for(var i = 0 ; i<5;i++){
+                 console.log(i);
+                 if(i ==2){
+                     //break  
+                     //continue
+                     return
+                 }
+             }
+
+             alert("函数执行玩了")
+         }
+         
+         fun();
+
+
+            /* 
+                返回值是任意数据类型
+                也可以是一个对象
+
+             */
+
+         function fun2() {
+             return //10
+                {name:"沙和尚"}
+
+         }
+
+
+         var a = fun2();
+         console.log(a)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

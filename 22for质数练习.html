@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        /* 
+            打印出1-100之间所有的质数
+
+         */
+
+         for( var a= 2 ;a<=100;a++){
+             
+            //创建一个布尔值，默认a为质数
+                var flag = true
+             //判断a是否为质数
+             //获取到1-i之间所有的数
+             for( var c = 2; c<a;c++){
+                 if(a%c==0){
+                        flag=false
+                 }
+             }
+
+             if(flag==true){
+                 console.log(c)
+             }
+         }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

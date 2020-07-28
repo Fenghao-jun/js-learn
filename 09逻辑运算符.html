@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        /* 
+            三个逻辑运算符:
+            ! 非
+                ！可以用来对每个值进行非运算
+                所谓非运算就算对一个布尔值取反操作，true变false，false变true
+                如果对非布尔值运算，将会转换成为布尔值再取反，所以我们可以利用这个特点将其转换为布尔值
+
+                为任意数据类型做两次非运算，即可将其转换为布尔值
+                原理和boolean（）函数一样
+
+
+            &&与
+                可以对符号两侧的值进行与运算，并返回结果
+                只要有一个false就返回false，两个值都为true就返回true
+            
+            ||或
+                
+         
+         */
+        var a = false;
+            //对a进行非运算
+            a = !a;
+        console.log("a = "+a);
+        
+        
+        //只要有一个false就返回false，两个值都为true就返回true
+        var result=true&&false;
+
+        console.log("result = "+result)
+
+        true&&alert("你看我出来吗？")//第一个值为true，会检查第二个值，第一个值为false则不会
+
+        var c = false||false//只要有一个true就返回true，两个值都为flase就返回flase
+        c = true||true
+        false||alert("这是||")//第一个值是false，会检查第二个值，第一个值为true则不会
+        console.log("c = " +c)
+    </script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

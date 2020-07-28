@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* 
+            通过关系运算符可以比较两个值之间的大小关系
+                如果游戏成立他会返回true，如果不成立返回false
+
+            >
+                翻盘左侧是否大于右边
+                如果关系成立，则返回true，如果关系不成立返回false
+            >= 大于等于
+                判断是否大于左边
+                如果关系成立，则返回true，如果关系不成立返回false
+            <= 小于等于
+            <
+                判断是否大于左边
+                如果关系成立，则返回true，如果关系不成立返回false
+
+            对于非数值进行比较时会将其转化为数字，然后再比较
+            任何值和Nan做比较都是false
+            如果符号两边的值都是字符串，不会将其转换为数字比较，会直接表字符的unicode编码
+         */
+        
+        var result = 5 > 10;//false
+            result = 10 > 5; //true
+            result = 5 > 5 ;// false
+
+            result = 5 >=4;//true
+
+
+        console.log("result = " +result)
+        console.log("a"<"b")//true
+        //比较两个字符串时，比较的是字符串的字符编码
+        //比较字符编码时是一位以为进行比较
+        //如果两位一样，则比较下一位，所以用它可以来对英文进行排序
+        console.log("abc"<"bcd")//true
+
+        //如果比较的是两个字符串型的数字可能会得到不可预期的结果
+        //注意：比较两个字符串时，一定要转型
+        console.log("1654654654"<"5");//false
+        console.log("32165465"<+"5")//true
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

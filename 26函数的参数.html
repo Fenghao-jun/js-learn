@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        /* 
+            定义一个用来求两个数和函数
+                可以在函数的()中来指定一个或多个形参(形式参数)
+                多个形参之间用，隔开，声明形参就相当于在函数内部声明了变量
+                但是不赋值
+            
+            function sum(a,b){                      function(){
+                                                        var a;
+            console.log(a+b)            =               var b
+        }                                               }
+            
+         */
+
+        function sum(a,b){
+            
+            console.log(a+b)
+        }
+        /* 
+            在调用函数时，可以在()中指定实参()实际参数
+                实际参数会赋值给形参
+         */
+
+        //sum(1,2)
+        //sum(123,456)
+
+        /* 
+            调用函数时解析器不会检查实参类型，
+            所以要注意是否有可能会接受到非法参数，如果有可能，则需要检查参数类型
+         */
+
+        console.log(123,"hello")
+
+
+        /* 
+        解释器不会检查实参数量
+        多余的实参不会被赋值
+        如果实参少于形参，则没有对应形参将是undef
+         */
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

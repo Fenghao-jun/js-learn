@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* 
+            定义一个函数，判断一个数字是否是偶数，如果是返回true，否则返回false
+         */
+
+        function isou(num){
+         /*    if(num %2 == 0){
+                return true
+            }else{
+                return false;
+            } */
+
+            return num % 2==0
+        }
+        var result = isou(15);
+
+
+
+        /* 
+            定义一个函数，可以根据半径计算一个圆的面积，并返回计算结果
+
+         */
+            function mianji(r){
+                return 3.14*r*r
+            }
+            result = mianji(5)
+
+            // console.log(result)
+
+
+            /* 
+                创建一个函数，可以在控制台中输出一个人的信息
+                name age gender address
+
+                实参可以是任意的数据类型，也可以是对象
+                    当我们参数过多时，可以将参数封装到一个对象中，然后通过对象传递
+             */
+
+            /* function xinxi(name,age,gender,address){
+                console.log("我是"+name+"今年"+age+"我是一个"+gender)
+            } 
+ */
+            function xinxi(o) {
+                console.log("我是"+o.name+",今年我"+o.age+"我是一个"+o.gender+"我来自"+o.address)
+            }
+
+            //创建一个对象
+            var obj = {
+                name:"孙悟空",
+                age:18,
+                gender:"男",
+                address:"花果山"
+            }
+            xinxi(obj);
+
+            /* 
+                实参可以是对象，也可以是函数
+             */
+            function fun(a) {
+                console.log(a)
+            }
+
+            fun(mianji(50))
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

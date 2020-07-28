@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var  name = "全局"
+
+        function fun(){
+            console.log(this.name)
+        }
+
+
+        var obj = {
+            name :"孙悟空",
+            sayName:fun
+        }
+
+        var obj2 = {
+            name :"沙和尚",
+            sayName:fun
+        }
+
+        //fun()
+
+        //我们希望调用obj.sayName时可以输出obj得名字
+        //这个时候就需要在函数上面加个this
+        obj.sayName()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
